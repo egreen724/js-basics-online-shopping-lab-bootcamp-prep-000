@@ -12,8 +12,8 @@ function setCart(c) {
 function addToCart(item) {
  cart.unshift(item);
  item = { 
-   itemName: cart[0], 
-   itemPrice: Math.floor(Math.random() * 101) }
+   itemName: `${cart[0]}`, 
+   itemPrice: Math.floor(Math.random() * 101) };
  return `${itemName} has been added to your cart.`
 }
 
