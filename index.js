@@ -28,7 +28,7 @@ function viewCart() {
     return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, and ${getCart()[1].itemName} at $${getCart()[1].itemPrice}.`
   }
   for (let i = 0; cart.length >= 3; i++){
-    return `In your cart, you have ${getCart()[i].itemName} at $${getCart()[i].itemPrice}, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}, and ${getCart()[i].itemName} at $${getCart()[i].itemPrice}.`
+    return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}, ${getCart()[1].itemName} at $${getCart()[1].itemPrice}, and ${getCart()[2].itemName} at $${getCart()[2].itemPrice}.`
   }
 }
 
