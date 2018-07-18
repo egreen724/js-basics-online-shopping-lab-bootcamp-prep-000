@@ -44,6 +44,16 @@ function total() {
   var totalCost = sumUpPrices()
   return totalCost;
 }
+function searchCartForItemToRemove(itemName) {
+  var searchResult
+  for (var i=0; i<getCart().length; i++) {
+    if (getCart()[i].itemName === itemName) {searchResult = getCart()[i]}
+  }
+  return searchResult
+}
+
+
+
 
 function removeFromCart(itemRemoved) {
   if (item.itemName === true) {
