@@ -38,7 +38,7 @@ function total() {
   }
 }
 
-function removeFromCart(item) {
+function removeFromCart(item.itemName) {
   // write your code here
 }
 
