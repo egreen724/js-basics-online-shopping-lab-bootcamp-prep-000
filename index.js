@@ -33,9 +33,8 @@ function viewCart() {
 }
 
 function total() {
-  for (let i = 0; i <= cart.length; ){
-    return (cart[0].itemPrice + cart[1].itemPrice + cart[2].itemPrice); 
-  }
+  var totalCost = getCart()[0].itemPrice + getCart()[1].itemPrice + getCart()[2].itemPrice;
+  return totalCost;
 }
 
 function removeFromCart(item) {
