@@ -58,14 +58,9 @@ function removeItemFromCart(itemToRemove) {
 
 
 
-function removeFromCart(itemRemoved) {
-  if (item.itemName === true) {
-    cart.splice()
-    return cart; 
-  }
-  if (item.itemName === false) {
-    return "That item is not in your cart."
-  }
+function removeFromCart(itemName) {
+  var itemToRemove = searchCartForItemToRemove(itemName)
+  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
 }
 
 function placeOrder(cardNumber) {
