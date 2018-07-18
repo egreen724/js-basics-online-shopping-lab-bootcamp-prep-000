@@ -33,7 +33,7 @@ function viewCart() {
 }
 
 function total() {
-  var totalCost = getCart()[0].itemPrice + getCart()[1].itemPrice + getCart()[2].itemPrice;
+  var totalCost = sumUpPrices()
   return totalCost;
 }
 
