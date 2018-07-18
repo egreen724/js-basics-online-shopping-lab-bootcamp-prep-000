@@ -37,7 +37,7 @@ function total() {
   return totalCost;
 }
 
-function removeFromCart(item) {
+function removeFromCart(itemRemoved) {
   if (item.itemName === true) {
     cart.splice()
     return cart; 
@@ -48,7 +48,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  if (cardNumber === 0) {
+  if (cardNumber === undefined) {
     return "Sorry, we don't have a credit card on file for you."
   }
   else {
