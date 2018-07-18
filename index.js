@@ -39,7 +39,9 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (item === true)
+  if (item === true) {
+    cart.p
+  }
 }
 
 function placeOrder(cardNumber) {
