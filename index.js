@@ -39,7 +39,7 @@ function total() {
 
 function removeFromCart(item) {
   if (item.itemName === true) {
-    cart.pop()
+    cart.splice()
     return cart; 
   }
   if (item.itemName === false) {
