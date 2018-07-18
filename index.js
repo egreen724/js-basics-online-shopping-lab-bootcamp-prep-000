@@ -44,6 +44,7 @@ function total() {
   var totalCost = sumUpPrices()
   return totalCost;
 }
+
 function searchCartForItemToRemove(itemName) {
   var searchResult
   for (var i=0; i<getCart().length; i++) {
@@ -56,11 +57,9 @@ function removeItemFromCart(itemToRemove) {
   getCart().splice(indexOfItemToRemove,1)
 }
 
-
-
 function removeFromCart(itemName) {
-  var itemToRemove = searchCartForItemToRemove(itemName)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
+  var itemToRemove = searchCartForItemToRemove(itemName);
+  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove();
 }
 
 function placeOrder(cardNumber) {
