@@ -40,7 +40,8 @@ function total() {
 
 function removeFromCart(item) {
   if (item === true) {
-    cart.p
+    cart.pop()
+    return cart; 
   }
 }
 
