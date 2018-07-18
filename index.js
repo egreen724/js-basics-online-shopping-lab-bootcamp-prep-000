@@ -34,7 +34,7 @@ function viewCart() {
 
 function total() {
   for (i = 0; i <= cart.length; i++){
-    return `${getCart()[i].itemPrice + getCart()[i].itemPrice}` 
+    return `${getCart()[0].itemPrice + getCart()[1].itemPrice}` 
   }
 }
 
