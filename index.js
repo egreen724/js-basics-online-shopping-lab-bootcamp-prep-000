@@ -38,8 +38,8 @@ function total() {
   }
 }
 
-function removeFromCart(item.itemName) {
-  // write your code here
+function removeFromCart(item) {
+  if (item === true)
 }
 
 function placeOrder(cardNumber) {
