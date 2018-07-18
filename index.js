@@ -32,6 +32,14 @@ function viewCart() {
   }
 }
 
+function sumUpPrices() {
+  var sum = 0
+  for (var i=0; i<getCart().length; i++) {
+    sum = sum + getCart()[i].itemPrice
+  }
+  return sum
+}
+
 function total() {
   var totalCost = sumUpPrices()
   return totalCost;
