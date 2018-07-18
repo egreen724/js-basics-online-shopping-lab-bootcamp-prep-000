@@ -9,6 +9,11 @@ function setCart(c) {
   return cart;
 }
 
+function item(itemName, itemPrice) {
+    this.itemName = first;
+    this.itemPrice = last;
+}
+
 function addToCart(item) {
  cart.unshift(item);
  item = { 
