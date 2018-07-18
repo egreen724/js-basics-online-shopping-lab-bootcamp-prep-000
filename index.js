@@ -10,8 +10,8 @@ function setCart(c) {
 }
 
 function item(itemName, itemPrice) {
-    this.itemName = first;
-    this.itemPrice = last;
+    this.itemName = name;
+    this.itemPrice = price;
 }
 
 function addToCart(item) {
